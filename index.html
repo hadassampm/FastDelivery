@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastDelivery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400&family=Jolly+Lodger&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary" style="border-radius: 2rem; margin-bottom: 20px; padding-bottom: 0px;">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="imagens/FastDelivery.png" style="width: 100px;"></a>
+      <button class="btn btn-success me-md-2 estilo-botao" type="button">Carrinho<img src="imagens/carrinho-de-compras.png" style="width: 25px;"></button>
+    </div>
+  </nav>
+
+  <form class="d-flex" role="search" style="margin-bottom: 20px;">
+    <input style="background-color: rgb(255, 253, 253); border-color: rgb(0, 0, 0);" class="form-control me-2" type="search" placeholder="ex: Xis de Coração" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+  </form>
+
+  <main role="main">
+    <div class="album py-5">
+      <div class="container">
+        <div class="row" id="restaurant-list"></div> <!-- Onde os restaurantes serão exibidos -->
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script/script.js"></script> <!-- Referência ao arquivo de JavaScript -->
+</body>
+</html>
